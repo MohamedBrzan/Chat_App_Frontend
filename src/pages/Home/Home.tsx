@@ -1,7 +1,9 @@
-
+import AppLayout from '../Layout/AppLayout';
 
 const Home = () => {
   return <>Home</>;
 };
 
-export default Home;
+const HomeHOC = AppLayout()(Home);
+
+export default HomeHOC;

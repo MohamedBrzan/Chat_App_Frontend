@@ -2,7 +2,6 @@ import { Box, Stack, Typography } from '@mui/material';
 import LinkStyle from '../components/Styles/LinkStyle';
 import { memo } from 'react';
 import AvatarCard from '../common/AvatarCard/AvatarCard';
-import { useParams } from 'react-router-dom';
 
 export type ChatItemProps = {
   avatar: string[];
@@ -38,8 +37,6 @@ const ChatItem = memo(
     handleDeleteChat,
     members,
   }: ChatItemProps) => {
-
-
     return (
       <LinkStyle
         key={index}

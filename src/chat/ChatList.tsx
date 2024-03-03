@@ -1,33 +1,16 @@
 import { Stack } from '@mui/material';
 import ChatItem from './ChatItem';
+type ChatsData = {
+  avatar: string[];
+  name: string;
+  _id: string;
+  groupChat: boolean;
+  members: string[];
+};
 
 type ChatItemProps = {
   w?: string;
-  chats: {
-    map(
-      arg0: (
-        {
-          avatar,
-          name,
-          _id,
-          groupChat,
-          members,
-        }: {
-          avatar: string[];
-          name: string;
-          _id: string;
-          groupChat: boolean;
-          members: string[];
-        },
-        i: number
-      ) => JSX.Element
-    ): React.ReactNode;
-    avatar: string[];
-    name: string;
-    _id: string;
-    groupChat: false;
-    members: string[];
-  };
+  chats: ChatsData[];
   chatId: string;
   onlineUsers: string[];
   newMessagesAlert: [{ chatId: string; count: number }];

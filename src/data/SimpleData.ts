@@ -8,7 +8,7 @@ const SimpleChats = [
   },
   {
     avatar: ['https://www.w3schools.com/howto/img_avatar.png'],
-    name: 'John Doe',
+    name: 'Jannat',
     _id: '2',
     groupChat: false,
     members: ['1', '2', '3', '4'],
