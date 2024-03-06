@@ -10,7 +10,7 @@ import { useState } from 'react';
 import { useInputValidation } from '6pp';
 import { Search as SearchIcon } from '@mui/icons-material';
 import UserItem from '../../common/UserItem/UserItem';
-import SimpleUsers from '../../data/SimpleUsers';
+import SimpleUsers from '../../data/SampleUsers';
 
 const SearchInput = () => {
   const [open, setOpen] = useState<boolean>(true);

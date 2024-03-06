@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useInputValidation, useStrongPassword } from '6pp';
 import Register from './Register';
 import { usernameValidator } from '../../utils/Validators';
+import { bgGradient } from '../../constants/colors';
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState<boolean>(true);
@@ -18,8 +19,7 @@ const Login = () => {
   return (
     <section
       style={{
-        backgroundImage:
-          'linear-gradient(rgba(200, 200, 200, 0.5), rgb(33 43 97))',
+        backgroundImage: bgGradient,
       }}
     >
       <Container

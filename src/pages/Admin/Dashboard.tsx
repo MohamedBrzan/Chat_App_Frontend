@@ -68,7 +68,19 @@ const Dashboard = () => {
       <Container component={'main'}>
         {AppBar}
 
-        <Stack direction={'row'} spacing={'2rem'} flexWrap={'wrap'}>
+        <Stack
+          direction={{
+            xs: 'column',
+            lg: 'row',
+          }}
+          spacing={'2rem'}
+          flexWrap={'wrap'}
+          justifyContent={'center'}
+          alignItems={{
+            xs: 'center',
+            lg: 'stretch',
+          }}
+        >
           <Paper
             elevation={3}
             sx={{
@@ -76,24 +88,27 @@ const Dashboard = () => {
               borderRadius: '1rem',
               width: '100%',
               maxWidth: '45rem',
-              height: '25rem',
+            }}
+            style={{
+              margin: '0 0 1rem',
             }}
           >
-            <Typography variant='h5'>Last Messages</Typography>
+            <Typography margin={'2rem 0'} variant='h4'>
+              Last Messages
+            </Typography>
             <LineChart value={[23, 56, 33, 67, 33, 2]} />
           </Paper>
-
           <Paper
             elevation={3}
             sx={{
               padding: '1rem',
               borderRadius: '1rem',
-              width: { xs: '100%', sm: '50%' },
-              position: 'relative',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              maxWidth: '45rem',
+              width: { xs: '100%', sm: '50%' },
+              position: 'relative',
+              maxWidth: '25rem',
               height: '25rem',
             }}
           >

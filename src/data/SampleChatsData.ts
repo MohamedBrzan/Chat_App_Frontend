@@ -1,4 +1,4 @@
-const SimpleChats = [
+const SampleChats = [
   {
     avatar: ['https://www.w3schools.com/howto/img_avatar.png'],
     name: 'John Smith',
@@ -25,6 +25,13 @@ const SimpleChats = [
     groupChat: true,
     members: ['1', '2', '3', '4'],
   },
+  {
+    avatar: ['https://www.w3schools.com/howto/img_avatar.png'],
+    name: 'Waleed',
+    _id: '4',
+    groupChat: false,
+    members: ['1', '2', '3', '4'],
+  },
 ];
 
-export default SimpleChats;
+export default SampleChats;

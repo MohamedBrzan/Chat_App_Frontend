@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import ChatList from '../../chat/ChatList';
-import SimpleChats from '../../data/SimpleData';
+import SimpleChats from '../../data/SampleChatsData';
 import { useParams } from 'react-router-dom';
 import Title from '../../common/Title/Title';
 import Header from '../../components/Header/Header';

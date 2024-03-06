@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <CssBaseline />
         <BrowserRouter>
           <div onContextMenu={(e) => e.preventDefault()}>
-            <App />
+          <App />
           </div>
         </BrowserRouter>
       </HelmetProvider>

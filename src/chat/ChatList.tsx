@@ -1,5 +1,6 @@
 import { Stack } from '@mui/material';
 import ChatItem from './ChatItem';
+import { bgGradient } from '../constants/colors';
 type ChatsData = {
   avatar: string[];
   name: string;
@@ -29,7 +30,15 @@ const ChatList = ({
   handleDeleteChat,
 }: ChatItemProps) => {
   return (
-    <Stack width={'100%'} direction={'column'}>
+    <Stack
+      width={'100%'}
+      direction={'column'}
+      overflow={'auto'}
+      height={'100%'}
+      sx={{
+        backgroundImage: bgGradient,
+      }}
+    >
       {chats.map(({ avatar, name, _id, groupChat, members }, i) => {
         const newMessageAlertResult = newMessagesAlert?.find(
           ({ chatId }) => chatId === _id
